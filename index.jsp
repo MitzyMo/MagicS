@@ -36,12 +36,14 @@
 <body>
 <h1> Datos de usuarios </h1>
   <form method="get" action="ServletUsuario" >
-    nombre: <input type="text" name="nombre" ><br><br>
-    edad: <input type="number" name="edad" value="0"><br><br>
+    <label>Valor Inicial</label>
+    <input type="number" name="valorI" ><br><br>
+    <label>Tamaño</label>
+    <input type="number" name="size" value="5"><br><br>
     <input type="submit" value="Enviar"> <br><br>
   </form>
   <hr><br><br>
-  <jsp:useBean id="mycurso" scope="application" class="modelo.Curso"/>
+  <jsp:useBean id="mysquare" scope="application" class="modelo.Magic"/>
   
   <table id="customers">
 <tr>

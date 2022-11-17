@@ -1,10 +1,11 @@
 package modelo;
 import java.util.*;
 
-public class Curso {
+public class Magic {
     private static ArrayList<Persona> listado;
     private String lista;
-    public Curso() {
+
+    public Magic() {
       this.listado = new ArrayList<Persona>();
     }
     

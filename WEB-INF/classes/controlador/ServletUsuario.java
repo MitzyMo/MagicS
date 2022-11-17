@@ -5,16 +5,16 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import javax.servlet.*;
 import modelo.Persona;
-import modelo.Curso;
+import modelo.Magic;
 
 @WebServlet("/ServletUsuario")
 
 public class ServletUsuario extends HttpServlet {
-  private Curso curso;
+  private Magic curso;
     
   public ServletUsuario() {
     super();
-    this.curso = new Curso();
+    this.curso = new Magic();
   }
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     String nombre = request.getParameter("nombre"); 
