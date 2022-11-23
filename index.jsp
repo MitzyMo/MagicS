@@ -46,33 +46,13 @@
   <jsp:useBean id="mysquare" scope="application" class="modelo.Magic"/>
   
   <table id="customers">
-<tr>
-<th>Nombre</th>
-<th>Edad</th>
-</tr>
+
 <c:forEach items="${mycurso.listado}" begin="0" end="${mycurso.listado.size()}" var="persona">
   <tr><td><c:out value="${persona.nombre}"/> </td>
   <td><c:out value="${persona.edad}"/> </td></tr>
  </c:forEach>
 </table>
 
-<%-- 
-<br><br><hr><br><br>
-  <p>Ejercicio Loop</p>
-
-  <table id="customers">
-    <tr>
-    <th>#1</th>
-    <th>#2</th>
-    </tr>
-   <c:forEach var="i" begin="0" end="5"  >
-    <tr><td><c:out value="${i}"/></td>
-    <c:forEach var="i" begin="0" end="5"> 
-      <td><c:out value=" ${i}"/></td></tr>
-    </c:forEach>
- </c:forEach>
-</table>
---%>
 
 </body>
 </html> 

@@ -10,15 +10,16 @@ import modelo.Magic;
 @WebServlet("/ServletUsuario")
 
 public class ServletUsuario extends HttpServlet {
-  private Magic curso;
+  private Magic squareMagic;
     
   public ServletUsuario() {
     super();
-    this.curso = new Magic();
+    this.squareMagic = new Magic();
   }
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    String nombre = request.getParameter("nombre"); 
-    String paramEdad = request.getParameter("edad");
+    int s  = request.getParameter("size"); 
+    int valorI = request.getParameter("valorI");
+    squareMagic.makeSquare(s);
     int edad = 0;
     if(!nombre.equals("") && paramEdad != null){
       edad = Integer.parseInt(paramEdad);
